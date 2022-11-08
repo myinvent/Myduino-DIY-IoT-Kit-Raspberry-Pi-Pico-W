@@ -4,7 +4,6 @@ import board
 import ssl
 import wifi
 import socketpool
-import microcontroller
 import adafruit_requests as requests
 import adafruit_dht
 import favoriot_ca
