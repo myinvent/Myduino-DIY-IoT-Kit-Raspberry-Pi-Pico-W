@@ -13,6 +13,13 @@ dht11 = adafruit_dht.DHT11(board.GP15)
 ssid = os.getenv('WIFI_SSID')
 password = os.getenv('WIFI_PASSWORD')
 
+print("""
+    ______                       _       __ 
+   / ____/___ __   ______  _____(_)___  / /_
+  / /_  / __ `/ | / / __ \/ ___/ / __ \/ __/
+ / __/ / /_/ /| |/ / /_/ / /  / / /_/ / /_  
+/_/    \__,_/ |___/\____/_/  /_/\____/\__/ v3.0.0""" + " (Microcontroller: " + os.uname()[0] + ")\n")
+
 print("Connecting to '" + ssid + "' ... ", end="")
 
 wifi.radio.connect(ssid, password)
@@ -69,10 +76,13 @@ while True:
         )
         
         response = request.json()
+        print("Favoriot HTTP Request: ", end="")
 
         if response["statusCode"] == 20150:
-            print("HTTP Success: " + response["message"])
+            print("Success: " + response["message"])
         else:
-            print("HTTP Error: " + response["message"])
+            print("Error: " + response["message"])
                 
         request.close()
+        
+        print()
