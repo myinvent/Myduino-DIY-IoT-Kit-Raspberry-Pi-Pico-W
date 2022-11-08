@@ -1,0 +1,25 @@
+import os
+import ipaddress
+import wifi
+import socketpool
+
+print("Connecting to WiFi '{}' ... ".format(os.getenv('WIFI_SSID')), end="")
+
+#  Connect to Wi-Fi AP
+wifi.radio.connect(os.getenv('WIFI_SSID'), os.getenv('WIFI_PASSWORD'))
+
+print("connected!")
+print()
+
+pool = socketpool.SocketPool(wifi.radio)
+
+#  Print MAC address
+print("Pico W MAC address: ", [hex(i) for i in wifi.radio.mac_address])
+
+#  Print IP address
+print("Pico W IP address: ", wifi.radio.ipv4_address)
+print()
+
+#  Ping to google.com
+ipv4 = ipaddress.ip_address("8.8.4.4")
+print("Ping to google.com: %f ms" % (wifi.radio.ping(ipv4)*1000))
