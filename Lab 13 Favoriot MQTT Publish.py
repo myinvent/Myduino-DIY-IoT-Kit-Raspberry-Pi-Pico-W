@@ -66,7 +66,7 @@ while True:
         time.sleep(2.0)
         continue
     except Exception as error:
-        dhtDevice.exit()
+        dht11.exit()
         raise error
     
     time.sleep(2)
