@@ -2,12 +2,12 @@ import time
 import board
 import adafruit_dht
 
-dhtDevice = adafruit_dht.DHT11(board.GP15)
+dht11 = adafruit_dht.DHT11(board.GP15)
 
 while True:
     try:
-        temperature = dhtDevice.temperature
-        humidity = dhtDevice.humidity
+        temperature = dht11.temperature
+        humidity = dht11.humidity
         
         print("Temperature: {} °C, Humidity: {} %RH ".format(temperature, humidity))
 
