@@ -48,10 +48,7 @@ mqtt_client = MQTT.MQTT(
 # Connect callback handlers to mqtt_client
 mqtt_client.on_connect = mqtt.connect
 mqtt_client.on_disconnect = mqtt.disconnect
-mqtt_client.on_subscribe = mqtt.subscribe
-mqtt_client.on_unsubscribe = mqtt.unsubscribe
 mqtt_client.on_publish = mqtt.publish
-mqtt_client.on_message = mqtt.message
 
 print("Connecting to MQTT broker '%s' with secure port ... " % mqtt_client.broker, end="")
 mqtt_client.connect()
