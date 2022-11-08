@@ -3,10 +3,13 @@ import ipaddress
 import wifi
 import socketpool
 
-print("Connecting to WiFi '{}' ... ".format(os.getenv('WIFI_SSID')), end="")
+ssid = os.getenv('WIFI_SSID')
+password = os.getenv('WIFI_PASSWORD')
+
+print("Connecting to WiFi '{}' ... ".format(ssid), end="")
 
 #  Connect to Wi-Fi AP
-wifi.radio.connect(os.getenv('WIFI_SSID'), os.getenv('WIFI_PASSWORD'))
+wifi.radio.connect(ssid, password)
 
 print("connected!")
 print()
