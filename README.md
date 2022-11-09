@@ -2,7 +2,7 @@
 
 > Let's learn Internet of Things (IoT) using [CircuitPython](https://circuitpython.org/) with Raspberry Pi Pico W 😉
 
-Hi there, thank you for purchasing Basic IoT Kit Raspberry Pi Pico W. You are one step to the journey of Internet of Things 👍
+Hi there, thank you for purchasing [Basic IoT Kit Raspberry Pi Pico W](https://myduino.com/product/myd-055/). You are one step to the journey of Internet of Things 👍
 
 # Introduction
 
