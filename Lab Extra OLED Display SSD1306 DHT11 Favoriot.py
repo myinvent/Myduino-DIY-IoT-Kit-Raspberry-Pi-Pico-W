@@ -24,10 +24,8 @@ dht11 = adafruit_dht.DHT11(board.GP15)
 
 now = time.monotonic()
 
-# ssid = os.getenv('WIFI_SSID')
-# password = os.getenv('WIFI_PASSWORD')
-ssid = 'myinvententerprise'
-password = '04222682'
+ssid = os.getenv('WIFI_SSID')
+password = os.getenv('WIFI_PASSWORD')
 
 print("""
     ______                       _       __ 
@@ -49,10 +47,8 @@ pool = socketpool.SocketPool(wifi.radio)
 mqtt_client = MQTT.MQTT(
     broker="mqtt.favoriot.com",
     port=1883,
-#     username=os.getenv("FAVORIOT_DEVICE_ACCESS_TOKEN"),
-#     password=os.getenv("FAVORIOT_DEVICE_ACCESS_TOKEN"),
-    username='VVjOwbip7bMhcRrxjetJjxfdIVQYieq3',
-    password='VVjOwbip7bMhcRrxjetJjxfdIVQYieq3',
+    username=os.getenv("FAVORIOT_DEVICE_ACCESS_TOKEN"),
+    password=os.getenv("FAVORIOT_DEVICE_ACCESS_TOKEN"),
     socket_pool=pool,
     ssl_context=ssl.create_default_context(),
 )
@@ -106,16 +102,14 @@ while True:
         now = time.monotonic()
         
         data = {
-#             "device_developer_id": os.getenv('FAVORIOT_DEVICE_DEVELOPER_ID'),
-            "device_developer_id": "PicoW@ariffinastute",
+            "device_developer_id": os.getenv('FAVORIOT_DEVICE_DEVELOPER_ID'),
             "data": {
                 "temperature": temperature,
                 "humidity": humidity
             }
         }
         
-#         mqtt_topic = "{}/v2/streams".format(os.getenv('FAVORIOT_DEVICE_ACCESS_TOKEN'))
-        mqtt_topic = "VVjOwbip7bMhcRrxjetJjxfdIVQYieq3/v2/streams"
+        mqtt_topic = "{}/v2/streams".format(os.getenv('FAVORIOT_DEVICE_ACCESS_TOKEN'))
         
         mqtt_client.publish(mqtt_topic, json.dumps(data))
         print()
