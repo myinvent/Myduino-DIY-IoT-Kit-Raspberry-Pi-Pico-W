@@ -4,8 +4,8 @@ import busio
 import displayio
 import terminalio
 import adafruit_displayio_ssd1306
+import adafruit_display_text.label as label
 import adafruit_dht
-from adafruit_display_text import label
 
 displayio.release_displays()
 
