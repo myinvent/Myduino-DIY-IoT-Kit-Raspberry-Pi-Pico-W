@@ -13,10 +13,8 @@ now = time.monotonic()
 
 dht11 = adafruit_dht.DHT11(board.GP15)
 
-# ssid = os.getenv('WIFI_SSID')
-# password = os.getenv('WIFI_PASSWORD')
-ssid = 'myinvententerprise'
-password = '04222682'
+ssid = os.getenv('WIFI_SSID')
+password = os.getenv('WIFI_PASSWORD')
 
 print("""
     _   __          __           ____  __________ 
@@ -38,10 +36,8 @@ pool = socketpool.SocketPool(wifi.radio)
 mqtt_client = MQTT.MQTT(
     broker="mqtt.favoriot.com",
     port=1883,
-#     username=os.getenv("FAVORIOT_DEVICE_ACCESS_TOKEN"),
-#     password=os.getenv("FAVORIOT_DEVICE_ACCESS_TOKEN"),
-    username='VVjOwbip7bMhcRrxjetJjxfdIVQYieq3',
-    password='VVjOwbip7bMhcRrxjetJjxfdIVQYieq3',
+    username=os.getenv("FAVORIOT_DEVICE_ACCESS_TOKEN"),
+    password=os.getenv("FAVORIOT_DEVICE_ACCESS_TOKEN"),
     socket_pool=pool,
     ssl_context=ssl.create_default_context(),
 )
