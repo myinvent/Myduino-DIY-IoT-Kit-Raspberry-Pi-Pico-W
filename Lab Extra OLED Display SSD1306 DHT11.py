@@ -3,9 +3,9 @@ import board
 import busio
 import displayio
 import terminalio
-from adafruit_display_text import label
 import adafruit_displayio_ssd1306
 import adafruit_dht
+from adafruit_display_text import label
 
 displayio.release_displays()
 
