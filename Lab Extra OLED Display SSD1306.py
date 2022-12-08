@@ -3,7 +3,7 @@ import busio
 import displayio
 import terminalio
 import adafruit_displayio_ssd1306
-from adafruit_display_text import label
+import adafruit_display_text.label as label
 
 displayio.release_displays()
 
