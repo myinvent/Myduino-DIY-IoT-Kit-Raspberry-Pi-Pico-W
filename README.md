@@ -47,7 +47,7 @@ To kick-start your IoT journey using Raspberry Pi Pico we will use Raspberry Pi 
 
 But Raspberry Pi Pico W alone are not able to help you begin the IoT journey. Therefore, we introduce you a [complete kit](https://myduino.com/product/myd-055/), to help you onboarding your IoT journey with Raspberry Pi.
 
-<p align="center"><a href="https://myduino.com/product/myd-055/"><img src="https://raw.githubusercontent.com/myinvent/Myduino-DIY-IoT-Kit-Raspberry-Pi-Pico-W/main/images/board/Image-Kit.png" width="300"></a></p>
+<p align="center"><a href="https://myduino.com/product/myd-055/"><img src="https://raw.githubusercontent.com/myinvent/Myduino-DIY-IoT-Kit-Raspberry-Pi-Pico-W/main/images/board/Image-Kit.png" width="400"></a></p>
 
 In this repository, we share CircuitPython example program to program the RP2040 microcontroller on the Raspberry Pi Pico W. The hands-on perform by lab exercises, from Lab 00 until Lab 16 with other 3 extra lab exercises interfacing with OLED display.
 
