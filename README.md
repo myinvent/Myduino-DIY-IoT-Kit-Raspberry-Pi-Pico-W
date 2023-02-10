@@ -82,9 +82,9 @@ The learning curve of the lab, starts from the understanding of the CircuitPytho
 15. Lab 14 Favoriot MQTTS Publish
 16. Lab 15 Favoriot MQTTS Subscribe RPC
 17. Lab 16 Favoriot MQTT Publish Node-RED Subscribe
-18. Lab Extra OLED Display SSD1306 DHT11 Favoriot
+18. Lab Extra OLED Display SSD1306
 19. Lab Extra OLED Display SSD1306 DHT11
-20. Lab Extra OLED Display SSD1306
+20. Lab Extra OLED Display SSD1306 DHT11 Favoriot
 
 Happy learning.
 
