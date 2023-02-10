@@ -1,3 +1,15 @@
+```
+   __  ___     _                   __    ______        __             __          _       
+  /  |/  /_ __(_)__ _  _____ ___  / /_  /_  __/__ ____/ /  ___  ___  / /__  ___ _(_)__ ___
+ / /|_/ / // / / _ \ |/ / -_) _ \/ __/   / / / -_) __/ _ \/ _ \/ _ \/ / _ \/ _ `/ / -_|_-<
+/_/  /_/\_, /_/_//_/___/\__/_//_/\__/   /_/  \__/\__/_//_/_//_/\___/_/\___/\_, /_/\__/___/
+       /___/                                                              /___/           
+iot.embedded.ai.connectivity.training.solutions ==========================================
+
+https://myduino.com
+ariffin@myduino.com
+```
+
 # Myduino DIY IoT Kit Raspberry Pi Pico W
 
 > Let's learn Internet of Things (IoT) using [CircuitPython](https://circuitpython.org/) with Raspberry Pi Pico W 😉
