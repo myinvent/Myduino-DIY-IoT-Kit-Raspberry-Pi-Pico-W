@@ -13,6 +13,7 @@ import adafruit_display_text.label as label
 import adafruit_minimqtt.adafruit_minimqtt as MQTT
 import adafruit_displayio_ssd1306
 import adafruit_dht
+import favoriot_ca
 
 displayio.release_displays()
 
@@ -42,6 +43,8 @@ print('connected.')
 
 # Create a socket pool
 pool = socketpool.SocketPool(wifi.radio)
+context = ssl.create_default_context()
+context.load_verify_locations(cadata=favoriot_ca.cert)
 
 # Set up a MiniMQTT Client
 mqtt_client = MQTT.MQTT(
@@ -50,7 +53,7 @@ mqtt_client = MQTT.MQTT(
     username=os.getenv('FAVORIOT_DEVICE_ACCESS_TOKEN'),
     password=os.getenv('FAVORIOT_DEVICE_ACCESS_TOKEN'),
     socket_pool=pool,
-    ssl_context=ssl.create_default_context(),
+    ssl_context=context,
 )
 
 # Connect callback handlers to mqtt_client
