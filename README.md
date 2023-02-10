@@ -88,7 +88,7 @@ Let's get started by learning from the inventor of this super awesome framework,
 
 ## Raspberry Pi Pico W Pinout
 
-<p align="center"><img src="https://www.raspberrypi.com/documentation/microcontrollers/images/pico-pinout.svg" width="700"></p>
+<p align="center"><img src="https://www.raspberrypi.com/documentation/microcontrollers/images/pico-pinout.svg" width="800"></p>
 
 ## References
 
