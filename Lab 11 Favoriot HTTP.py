@@ -67,8 +67,8 @@ while True:
         }
 
         request = http.request(
-            "POST",
-            "http://apiv2.favoriot.com/v2/streams",
+            os.getenv("FAVORIOT_HTTPS_METHOD"),
+            os.getenv("FAVORIOT_HTTPS_API"),
             timeout = 5,
             headers = headers,
             json = json

@@ -31,7 +31,7 @@ print("""
  / __/ / /_/ /| |/ / /_/ / /  / / /_/ / /_  
 /_/    \__,_/ |___/\____/_/  /_/\____/\__/ v3.0.0""" + " (Microcontroller: " + os.uname()[0] + ")\n")
 
-print("Connecting to Wi-Fi '" + ssid + "' ... ", end="")
+  print("Connecting to Wi-Fi '" + ssid + "' ... ", end="")
 
 wifi.radio.connect(ssid, password)
 
@@ -63,8 +63,8 @@ def mqtt_message(client, topic, message):
 
 # Set up a MiniMQTT Client
 mqtt_client = MQTT.MQTT(
-    broker="mqtt.favoriot.com",
-    port=8883,
+    broker=os.getenv("FAVORIOT_MQTT_BROKER_HOST"),
+    port=os.getenv("FAVORIOT_MQTT_BROKER_PORT"),
     username=os.getenv("FAVORIOT_DEVICE_ACCESS_TOKEN"),
     password=os.getenv("FAVORIOT_DEVICE_ACCESS_TOKEN"),
     socket_pool=pool,
