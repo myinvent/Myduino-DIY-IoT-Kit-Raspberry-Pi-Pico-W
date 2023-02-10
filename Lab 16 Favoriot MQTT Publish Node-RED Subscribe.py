@@ -38,8 +38,7 @@ mqtt_client = MQTT.MQTT(
     port=os.getenv("FAVORIOT_MQTT_BROKER_PORT"),
     username=os.getenv("FAVORIOT_DEVICE_ACCESS_TOKEN"),
     password=os.getenv("FAVORIOT_DEVICE_ACCESS_TOKEN"),
-    socket_pool=pool,
-    ssl_context=ssl.create_default_context(),
+    socket_pool=pool
 )
 
 # Connect callback handlers to mqtt_client
