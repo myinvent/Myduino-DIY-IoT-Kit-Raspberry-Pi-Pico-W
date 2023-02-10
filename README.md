@@ -51,6 +51,27 @@ But Raspberry Pi Pico W alone are not able to help you begin the IoT journey. Th
 
 In this repository, we share the example program for CircuitPython framework to program the RP2040 microcontroller on the Raspberry Pi Pico W, from Lab 00, which start with the understanding of the CircuitPython modules and boards until Lab 16, connecting Raspberry Pi Pico W using MQTT with secure protocol to [Favoriot](https://platform.favoriot.com) IoT platform.
 
+1. Lab 00 CircuitPython Pins and Modules
+2. Lab 01 Digital Output Blink On-Board LED
+3. Lab 02 Digital Output Blink An LED
+4. Lab 03 Digital Output Traffic Light
+5. Lab 04 Digital Output DC Motor
+6. Lab 05 PWM Output LED Brightness
+7. Lab 06 Digital Input Pushbutton
+8. Lab 07 Analog Input Potentiometer
+9. Lab 08 Analog Input LDR
+10. Lab 09 DHT11 Sensor
+11. Lab 10 Wi-Fi Connectivity
+12. Lab 11 Favoriot HTTP
+13. Lab 12 Favoriot HTTPS
+14. Lab 13 Favoriot MQTT Publish
+15. Lab 14 Favoriot MQTTS Publish
+16. Lab 15 Favoriot MQTTS Subscribe RPC
+17. Lab 16 Favoriot MQTT Publish Node-RED Subscribe
+18. Lab Extra OLED Display SSD1306 DHT11 Favoriot
+19. Lab Extra OLED Display SSD1306 DHT11
+20. Lab Extra OLED Display SSD1306
+
 Happy learning.
 
 ## Kickstart CircuitPython
