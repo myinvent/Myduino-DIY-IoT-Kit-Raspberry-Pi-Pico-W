@@ -49,7 +49,9 @@ But Raspberry Pi Pico W alone are not able to help you begin the IoT journey. Th
 
 <p align="center"><a href="https://myduino.com/product/myd-055/"><img src="https://raw.githubusercontent.com/myinvent/Myduino-DIY-IoT-Kit-Raspberry-Pi-Pico-W/main/images/board/Image-Kit.png" width="300"></a></p>
 
-In this repository, we share the example program for CircuitPython framework to program the RP2040 microcontroller on the Raspberry Pi Pico W, from Lab 00, which start with the understanding of the CircuitPython modules and boards until Lab 16, connecting Raspberry Pi Pico W using MQTT with secure protocol to [Favoriot](https://platform.favoriot.com) IoT platform.
+In this repository, we share CircuitPython example program to program the RP2040 microcontroller on the Raspberry Pi Pico W. The hands-on perform by lab exercises, from Lab 00 until Lab 16 with other 3 extra lab exercises interfacing with OLED display.
+
+The learning curve of the lab, starts from the understanding of the CircuitPython modules and boards, control the output signal from the microcontroller, read the input from the sensors, lastly for the IoT exercises by experimenting data provisioning from Raspberry Pi Pico W using HTTP and MQTT with secure protocol to [Favoriot](https://platform.favoriot.com) IoT platform.
 
 1. Lab 00 CircuitPython Pins and Modules
 2. Lab 01 Digital Output Blink On-Board LED
