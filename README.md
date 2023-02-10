@@ -55,7 +55,7 @@ While Raspberry Pi Pico W and Pico WH with additional features of:
 
 ## Basic IoT Kit Raspberry Pi Pico W
 
-To kick-start your IoT journey using Raspberry Pi Pico we will use Raspberry Pi Pico W, for the development boards, which comes with Wi-Fi for the Internet connectivity.
+To kickstart your IoT journey using Raspberry Pi Pico we will use Raspberry Pi Pico W, for the development boards, which comes with Wi-Fi for the Internet connectivity.
 
 But Raspberry Pi Pico W alone are not able to help you begin the IoT journey. Therefore, we introduce you a [complete kit](https://myduino.com/product/myd-055/), to help you onboarding your IoT journey with Raspberry Pi.
 
