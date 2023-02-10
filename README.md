@@ -86,6 +86,10 @@ The latest version of CircuitPython firmware for Raspberry Pi Pico W is 8.0.0, c
 
 Let's get started by learning from the inventor of this super awesome framework, [Adafruit - Welcome to CircuitPython!](https://learn.adafruit.com/welcome-to-circuitpython/what-is-circuitpython)
 
+## Raspberry Pi Pico W Pinout
+
+<p align="center"><img src="https://www.raspberrypi.com/documentation/microcontrollers/images/pico-pinout.svg" width="600"></p>
+
 ## References
 
 - Raspberry Pi Pico W [Product Brief](https://datasheets.raspberrypi.com/picow/pico-w-product-brief.pdf)
