@@ -64,7 +64,7 @@ def mqtt_message(client, topic, message):
 # Set up a MiniMQTT Client
 mqtt_client = MQTT.MQTT(
     broker=os.getenv("FAVORIOT_MQTT_BROKER_HOST"),
-    port=os.getenv("FAVORIOT_MQTT_BROKER_PORT"),
+    port=os.getenv("FAVORIOT_MQTT_BROKER_SECURE_PORT"),
     username=os.getenv("FAVORIOT_DEVICE_ACCESS_TOKEN"),
     password=os.getenv("FAVORIOT_DEVICE_ACCESS_TOKEN"),
     socket_pool=pool,
