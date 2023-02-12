@@ -61,7 +61,7 @@ mqtt_client.on_connect = mqtt.connect
 mqtt_client.on_disconnect = mqtt.disconnect
 mqtt_client.on_publish = mqtt.publish
 
-print("Connecting to MQTT broker '%s' ... " % mqtt_client.broker, end="")
+print("Connecting to MQTT broker '%s' with secure port ... " % mqtt_client.broker, end="")
 mqtt_client.connect()
 
 while True:
