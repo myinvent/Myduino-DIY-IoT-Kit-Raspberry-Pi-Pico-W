@@ -31,7 +31,7 @@ print("""
  / __/ / /_/ /| |/ / /_/ / /  / / /_/ / /_  
 /_/    \__,_/ |___/\____/_/  /_/\____/\__/ v3.2.0""" + " (Microcontroller: " + os.uname()[0] + ")\n")
 
-  print("Connecting to Wi-Fi '" + ssid + "' ... ", end="")
+print("Connecting to Wi-Fi '" + ssid + "' ... ", end="")
 
 wifi.radio.connect(ssid, password)
 
