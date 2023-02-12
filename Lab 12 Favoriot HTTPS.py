@@ -80,7 +80,7 @@ while True:
         response = request.json()
         print("Favoriot HTTPS Request: ", end="")
 
-        if response["statusCode"] == 20150:
+        if response["statusCode"] == 201:
             print("Success: " + response["message"])
         else:
             print("Error: " + response["message"])

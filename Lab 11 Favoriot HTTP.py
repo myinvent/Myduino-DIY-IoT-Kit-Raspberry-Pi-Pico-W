@@ -77,7 +77,7 @@ while True:
         response = request.json()
         print("Favoriot HTTP Request: ", end="")
 
-        if response["statusCode"] == 20150:
+        if response["statusCode"] == 201:
             print("Success: " + response["message"])
         else:
             print("Error: " + response["message"])
