@@ -21,8 +21,8 @@ green = pwmio.PWMOut(board.GP4)
 
 now = time.monotonic()
 
-ssid = os.getenv('WIFI_SSID')
-password = os.getenv('WIFI_PASSWORD')
+ssid = os.getenv("WIFI_SSID")
+password = os.getenv("WIFI_PASSWORD")
 
 print("""
     ______                       _       __ 

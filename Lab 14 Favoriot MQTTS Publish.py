@@ -14,8 +14,8 @@ now = time.monotonic()
 
 dht11 = adafruit_dht.DHT11(board.GP15)
 
-ssid = os.getenv('WIFI_SSID')
-password = os.getenv('WIFI_PASSWORD')
+ssid = os.getenv("WIFI_SSID")
+password = os.getenv("WIFI_PASSWORD")
 
 print("""
     ______                       _       __ 

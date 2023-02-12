@@ -3,8 +3,8 @@ import ipaddress
 import wifi
 import socketpool
 
-ssid = os.getenv('WIFI_SSID')
-password = os.getenv('WIFI_PASSWORD')
+ssid = os.getenv("WIFI_SSID")
+password = os.getenv("WIFI_PASSWORD")
 
 print("Connecting to WiFi '{}' ... ".format(ssid), end="")
 
